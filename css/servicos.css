@@ -1,0 +1,432 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;     
+    color: black;
+    text-align: center;     
+    background-color: rgb(255, 243, 218);
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 200px 500px 153px;
+    grid-template-areas: "cabecalho cabecalho cabecalho" 
+                         "secao secao secao"
+                         "servicos servicos servicos"
+                         "rodape rodape rodape";
+}
+
+
+
+header{
+    grid-area: cabecalho;
+    background-color: rgb(241, 17, 17);
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.close-button{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: rgb(194, 4, 4);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar.open .close-button{
+    display: block;
+}
+
+.navbar-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#toggleButton{
+   float: right;
+   margin: 40px;
+}
+    
+nav ul li a {
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 5px 10px;
+
+    box-shadow: 5px 5px 20px black;
+}
+
+nav ul li a:hover {
+    background: rgb(172, 3, 3);
+    border-color: rgb(172, 3, 3);
+    border-radius: 5px;
+
+}
+
+
+.hamburger{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    
+}
+    
+   
+ .logo {
+    width: 10%;
+    float: left;
+    
+ }
+
+
+#logo {
+    max-width: 100px;
+}
+
+
+#local {
+    color: yellow;
+}
+
+.bemvindo {
+    color: white;
+    
+   
+    
+    h1{
+        font-size: 100px;
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        letter-spacing: -0.5px;
+        line-height: 0.5;
+    }
+   
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 2px, solid, red;
+    border-radius: 5px;
+    padding: 4px;
+}
+ 
+ section {
+     grid-area: secao;
+   
+  }
+ 
+  .servicos {
+    grid-area: servicos;
+    background-color: rgb(255, 243, 218);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+
+    .servico1, .servico2, .servico3 { 
+        width: 30%;
+        background-color: red;
+        border: 5px, solid, rgb(197, 0, 0);
+        color: white;
+      }
+      
+      .servico1 {
+        background-image: url('../imagens/camisasLoja.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+      }
+
+      .servico2 {
+        width: 30%;
+        margin: 0 2px;
+        background-image: url('../imagens/personalizacao.webp');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     }
+    
+     .servico3 {
+        background-image: url('../imagens/bones.webp');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+        margin: 0;
+     }
+  }
+
+  
+  .mapa {
+     grid-area: mapa;
+     background-color: rgb(255, 243, 218);
+     margin: 50px 0;
+     display: flex;
+     justify-content: center; 
+     align-items: center;
+     
+     
+  }
+ 
+  .gmap_canvas{
+    border: solid 5px black;
+  }
+
+  footer {
+     grid-area: rodape;
+     background-color: red;
+     color: white;
+    display: grid;
+    padding: 10px;
+    font-size: 20px;
+
+    .social {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin: 10px 0;
+    }
+    
+    .social div {
+        margin: 0 10px; 
+    }
+    
+    #imagemSocial{
+        width: 40px; 
+        height: auto; 
+        transition: transform 0.5s ease; 
+    }
+
+    #imagemSocial:hover{
+        transform: scale(1.2);
+    }
+  }
+
+  .botaoServicos{
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 10px black;
+     
+  }
+
+  .botaoServicos:hover{
+    background-color: rgb(172, 3, 3);
+    
+    border-color: rgb(172, 3, 3);
+  }
+
+
+  @media(max-width: 992px) {
+    .principal {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: 100px 100px 500px 150px;
+            grid-template-areas: "cabecalho" 
+                                 "secao"
+                                 "servicos"
+                                 "rodape";
+        }
+        
+      
+    .bemvindo {
+        
+        padding: 10px;
+       
+        
+        h1{
+            font-size: 80px;
+            
+        }
+       
+        
+    }
+
+   .mapa{
+    max-width: 50%;
+    margin: 20px;
+    padding-left: 50px;
+    display: block;
+   
+   }
+
+   
+
+    .servicos{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;    
+
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        border: 12px, solid, red;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 95px;
+        right: 0;
+        left: 0px;
+        width: 91%;
+        padding: 1rem;
+        z-index: 10;
+    
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+   
+ }
+
+ @media(max-width: 768px) {
+
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 200px 800px 150px;
+        grid-template-areas: "cabecalho" 
+                                 "secao"
+                                 "servicos"
+                                 "rodape";
+    }
+
+    header{
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 100px; 
+    }
+
+    .mapa{
+        max-width: 50%;
+        margin: 20px;
+        padding-left: 1px;
+        
+       
+       }
+    
+    
+
+       .servicos{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 0px;
+        
+        .servico1, .servico2, .servico3 {
+            border: solid 1px #fff;
+            width: 100%;
+        }
+
+
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        right: 0;
+        width: 89%;
+        padding: 1rem;
+        z-index: 15;
+        border: 13px, solid, red;
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+ }

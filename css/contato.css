@@ -1,0 +1,415 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;     
+    color: black;
+    text-align: center;     
+    background-color: rgb(255, 243, 218);
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 800px 140px;
+    grid-template-areas: "cabecalho cabecalho cabecalho" 
+                         "secao secao secao"
+                         "rodape rodape rodape";
+}
+
+
+
+header{
+    grid-area: cabecalho;
+    background-color: rgb(241, 17, 17);
+     
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.close-button{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: rgb(194, 4, 4);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar.open .close-button{
+    display: block;
+}
+
+.navbar-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#toggleButton{
+   float: right;
+   margin: 40px;
+}
+    
+nav ul li a {
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 5px 10px;
+
+    box-shadow: 5px 5px 20px black;
+}
+
+nav ul li a:hover {
+    background: rgb(172, 3, 3);
+    border-color: rgb(172, 3, 3);
+    border-radius: 5px;
+
+}
+
+
+.hamburger{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    
+}
+   
+ .logo {
+    width: 10%;
+    float: left;
+    
+ }
+
+
+#logo {
+    max-width: 100px;
+}
+
+
+#local {
+    color: yellow;
+}
+
+main{
+    grid-area: secao;
+    h1{
+        font-size: 95px;
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        letter-spacing: -0.5px;
+        line-height: 0.1;
+        color: #fff;
+    }
+}
+
+input{
+    margin-bottom: 5px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+textarea{
+    padding: 10px;
+}
+
+.meucontato a{
+    padding: 5px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.meucontato a:hover{
+    background-color: rgb(172, 3, 3);
+    
+    border-color: rgb(172, 3, 3);
+}
+
+.enviar{
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: red;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: rgb(172, 3, 3);
+    
+    border-color: rgb(172, 3, 3);
+}
+
+.mapa {
+    grid-area: mapa;
+    background-color: rgb(255, 243, 218);
+    margin: 50px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+ }
+
+ .gmap_canvas{
+   border: solid 5px black;
+ }
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 2px, solid, red;
+    border-radius: 5px;
+    padding: 4px;
+}
+ 
+  
+ 
+  footer {
+     grid-area: rodape;
+     background-color: red;
+     color: white;
+    display: grid;
+    padding: 10px;
+    font-size: 20px;
+
+    .social {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin: 10px 0;
+    }
+    
+    .social div {
+        margin: 0 10px; 
+    }
+    
+    #imagemSocial{
+        width: 40px; 
+        height: auto; 
+        transition: transform 0.5s ease; 
+    }
+
+    #imagemSocial:hover{
+        transform: scale(1.2);
+    }
+  }
+
+  .botaoServicos{
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 10px 10px 10px black;
+     
+  }
+
+  .botaoServicos:hover{
+    background-color: rgb(172, 3, 3);
+    
+    border-color: rgb(172, 3, 3);
+  }
+
+
+
+
+  @media(max-width: 992px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 500px 500px 150px;
+        grid-template-areas: "cabecalho" 
+                             "secao"
+                             "mapa"
+                             "rodape";
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        border: 10px, solid, red;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 95px;
+        right: 0;
+        left: 0px;
+        width: 95%;
+        padding: 1rem;
+        z-index: 10;
+    
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+
+        label{
+            margin-top: 10px;
+        }
+
+        .enviar{
+            margin-top: 15px;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            padding: 8px;
+        }
+
+        input {
+            margin-bottom: 5px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            width: 80%;
+            box-sizing: border-box; 
+        }
+
+        
+    }
+   
+    .meucontato a{
+        padding: 5px;
+    }
+    
+ }
+
+ @media(max-width: 768px) {
+
+
+    .principal {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 100px 500px 500px 150px;
+        grid-template-areas: "cabecalho" 
+                             "secao"
+                             "mapa"
+                             "rodape";
+    }
+
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        right: 0;
+        width: 94%;
+        padding: 1rem;
+        z-index: 15;
+        border: 10px, solid, red;
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+
+    header{
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 100px; 
+        z-index: 1000;
+    }
+    
+    input {
+        margin-bottom: 5px; 
+        padding: 5px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        width: 80%;
+        box-sizing: border-box; 
+    }
+
+  
+
+ }

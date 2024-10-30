@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fale Comigo</title>
+        <link rel="stylesheet" href="../css/orcamento.css">
+    </head>
+    <body>
+        <div class="principal">
+            <header>
+                <div class="container">
+                    <div class="logo">
+                        <img src="../imagens/peitasFut.png" alt="Logo" id="logo">
+                    </div>
+                    <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                    <nav class="navbar" id="navbarNav">
+                        <button class="close-button" id="closeButton" aria-label="Close menu">X</button>
+                    <ul class="nav">
+                        <li class="nav-item" ><a class="nav-Link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-Link" href="./quem-somos.html">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-Link" href="./servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-Link" href="./produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a id="local" class="nav-Link" href="./orcamentos.html">Orçamentos</a></li>
+                        <li class="nav-item"><a class="nav-Link" href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                </div>
+                
+            </header>
+    <main>
+        <div class="orcamento">
+            <h1>Faça seu orçamento:</h1><br>
+        <form id="orcamento">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+        
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+            <label for="email">E-mail empresarial:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email para receber o orçamento" required>
+
+            <p>Serviços Desejado: </p>
+            <select name="serviçoDesejado">
+                <option value="">Escolha um serviço</option>
+                <option value="camisasTimes">Venda de camisas de times</option>
+                <option value="personalizaçãoCamisa">Personalização de Camisas</option>
+                <option value="acessorios">Venda de acessórios esportivos</option>
+            </select>
+            
+
+            <button type="submit" class="enviar">Enviar</button>
+        </form>    
+    </div>
+
+    
+    </main>
+
+    <footer>
+        <div class="social">
+        <div id="twitter">
+            <a href="twitter.com/PeitasFut" target="_blank"><img src="../imagens/twitter.svg" id="imagemSocial"></a>
+            </div>
+            <div id="insta">
+            <a href="instagram.com/PeitasFut" target="_blank"><img src="../imagens/instagram.svg" id="imagemSocial"></a>
+            </div>
+        </div>
+        <div id="direitos"><p>&copy; Todos os direitos reservados 2024.</p></div>
+    </footer>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>
