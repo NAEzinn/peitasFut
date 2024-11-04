@@ -368,7 +368,7 @@ a {
         }
     }
 
-    @media(max-width: 375px) {
+    @media(max-width: 445px) {
         .principal {
             grid-template-columns: 100%;
             display: grid;
@@ -376,7 +376,7 @@ a {
             grid-template-areas: "cabecalho" "secao" "rodape";
         }
         h1{
-            font-size: 20px;
+            font-size: 25px;
             
             }
         }
