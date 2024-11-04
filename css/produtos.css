@@ -486,3 +486,10 @@ a {
         
         }
     }
+
+    @media(max-width: 280px) {
+        h1{
+            font-size: 25px;
+            
+            }
+        }

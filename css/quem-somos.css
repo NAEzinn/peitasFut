@@ -380,3 +380,16 @@ a {
             
             }
         }
+
+        @media(max-width: 392px) {
+            .principal {
+                grid-template-columns: 100%;
+                display: grid;
+                grid-template-rows: 100px 1500px 150px;
+                grid-template-areas: "cabecalho" "secao" "rodape";
+            }
+            h1{
+                font-size: 20px;
+                
+                }
+            }
