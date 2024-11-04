@@ -129,6 +129,10 @@ nav ul li a:hover {
     width: 10%;
     float: left;
     
+    a{
+        background-color: transparent;
+        border-color: transparent;
+    }
  }
 
 
@@ -429,4 +433,11 @@ a {
         display: flex;
     }
 
+ }
+
+ @media(max-width: 640px) {
+    h1{
+        font-size: 50px;
+        letter-spacing: 0px;
+        }
  }

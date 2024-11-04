@@ -9,3 +9,4 @@ toggleButton.addEventListener('click', ()=> {
 closeButton.addEventListener('click', () =>{
     navbarNav.classList.remove('open');
 })
+

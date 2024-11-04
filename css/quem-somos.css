@@ -127,7 +127,11 @@ nav ul li a:hover {
  .logo {
     width: 10%;
     float: left;
-    
+   
+    a{
+        background-color: transparent;
+        border-color: transparent;
+    }
  }
 
 
@@ -222,10 +226,11 @@ a {
       
     h1{
         color:#fff;
-        font-size: 85px;
+        font-size: 70px;
         
         }
 
+            
 
     .navbar-toggler{
         display: flex;
@@ -286,9 +291,13 @@ a {
       
     h1{
         
-        font-size: 62px;
+        font-size: 60px;
         
         }
+        
+        .nos{
+            max-width: 300px;
+         }
 
     
 
@@ -328,3 +337,46 @@ a {
     }
 
  }
+
+ @media(max-width: 732px) {
+    h1{
+        font-size: 50px;
+        
+        }
+ }
+
+ @media(max-width: 640px) {
+    h1{
+        font-size: 40px;
+        
+        }
+
+        section{
+
+        .nos{
+            max-width: 200px;
+            
+         }
+        }
+    }
+
+    
+ @media(max-width: 538px) {
+    h1{
+        font-size: 30px;
+        
+        }
+    }
+
+    @media(max-width: 375px) {
+        .principal {
+            grid-template-columns: 100%;
+            display: grid;
+            grid-template-rows: 100px 1200px 150px;
+            grid-template-areas: "cabecalho" "secao" "rodape";
+        }
+        h1{
+            font-size: 20px;
+            
+            }
+        }

@@ -126,7 +126,10 @@ nav ul li a:hover {
  .logo {
     width: 10%;
     float: left;
-    
+    a{
+        background-color: transparent;
+        border-color: transparent;
+    }
  }
 
 

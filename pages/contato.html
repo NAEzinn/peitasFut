@@ -12,7 +12,7 @@
             <header>
                 <div class="container">
                     <div class="logo">
-                        <img src="../imagens/peitasFut.png" alt="Logo" id="logo">
+                        <a href="../index.html"><img src="../imagens/peitasFut.png" alt="Logo" id="logo"></a>
                     </div>
                     <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
                         <span class="hamburger"></span>
@@ -36,7 +36,7 @@
     <main>
         <div class="contato">
             <h1>Fale comigo:</h1>
-        <form>
+        <form id="contatoForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
@@ -44,7 +44,7 @@
             <input type="email" id="email" name="email" placeholder="Digite seu email" required>
 
             <label for="message">Mensagem:</label>
-            <input type="text" id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+            <input type="text" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
 
             <button type="submit" class="enviar">Enviar</button>
         </form>    
@@ -85,5 +85,6 @@
     </footer>
 </div>
 <script src="../js/script.js"></script>
+<script src="../js/validarForm.js"></script>
 </body>
 </html>

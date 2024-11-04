@@ -131,6 +131,10 @@ nav ul li a:hover {
     width: 10%;
     float: left;
     
+    a{
+        background-color: transparent;
+        border-color: transparent;
+    }
  }
 
 
@@ -345,6 +349,13 @@ a {
     
  }
 
+ @media(max-width: 920px) {
+    h1{
+        font-size: 80px;
+        
+        }
+ }
+
  @media(max-width: 768px) {
     .principal {
         width: 100%;
@@ -375,9 +386,7 @@ a {
         }
 
         .camisa {
-            max-width: 500px;
-            max-height: 450px;
-            margin-top: 40px;
+            max-width: 80%;
           }
     }
 
@@ -389,7 +398,6 @@ a {
     }
       
     h1{
-        
         font-size: 70px;
         
         }
@@ -433,3 +441,17 @@ a {
 
 
  }
+
+ @media(max-width: 640px) {
+    h1{
+        font-size: 50px;
+        
+        }
+ }
+
+ @media(max-width: 450px) {
+    h1{
+        font-size: 40px;
+        
+        }
+    }
