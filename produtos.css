@@ -147,7 +147,7 @@ nav ul li a:hover {
     color: yellow;
 }
 
-
+   
     h1{
         color: #fff;
         font-size: 100px;
@@ -155,6 +155,7 @@ nav ul li a:hover {
         letter-spacing: -0.5px;
         line-height: 0;
     }
+
    
     
 
@@ -497,7 +498,19 @@ a {
     }
 
     
- @media(max-width: 400px) {
+ @media(max-width: 403px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 50px 2000px 2000px 235px;
+        grid-template-areas: "cabecalho" 
+                              "secao" 
+                              "produto1" 
+                              "produto2" 
+                              "rodape";
+    }
+
     h1{
         font-size: 25px;
         
@@ -505,6 +518,18 @@ a {
     }
 
     @media(max-width: 370px) {
+        .principal {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: 100px 30px 2000px 2000px 235px;
+            grid-template-areas: "cabecalho" 
+                                  "secao" 
+                                  "produto1" 
+                                  "produto2" 
+                                  "rodape";
+        }
+    
         h1{
             font-size: 20px;
             
