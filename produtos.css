@@ -1,0 +1,512 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;     
+    color: black;
+    text-align: center;     
+    background-color: rgb(255, 243, 218);
+}
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px 150px 500px 500px;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho cabecalho" 
+                         "secao secao secao secao secao"
+                         "produto1 produto1 produto1 produto1 produto1" 
+                         "produto2 produto2 produto2 produto2 produto2" 
+                         "rodape rodape rodape rodape rodape";
+}
+
+
+
+
+header{
+    grid-area: cabecalho;
+    background-color: rgb(241, 17, 17);
+  
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.close-button{
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+    color: rgb(194, 4, 4);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar.open .close-button{
+    display: block;
+}
+
+.navbar-toggler{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#toggleButton{
+   float: right;
+   margin: 40px;
+}
+    
+nav ul li a {
+    color: #fff;
+
+    text-decoration: none;
+
+    padding: 5px 10px;
+
+    box-shadow: 5px 5px 20px black;
+}
+
+nav ul li a:hover {
+    background: rgb(172, 3, 3);
+    border-color: rgb(172, 3, 3);
+    border-radius: 5px;
+
+}
+
+
+.hamburger{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    
+}
+    
+   
+ .logo {
+    width: 10%;
+    float: left;
+    
+    a{
+        background-color: transparent;
+        border-color: transparent;
+    }
+ }
+
+
+#logo {
+    max-width: 100px;
+}
+
+
+#local {
+    color: yellow;
+}
+
+
+    h1{
+        color: #fff;
+        font-size: 100px;
+        -webkit-text-stroke: 2px rgb(0, 0, 0);
+        letter-spacing: -0.5px;
+        line-height: 0;
+    }
+   
+    
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: 2px, solid, red;
+    border-radius: 5px;
+    padding: 4px;
+}
+ 
+ section {
+     grid-area: secao;
+  }
+ 
+  .produtos1 {
+
+    grid-area: produto1;
+    background-color: rgb(255, 243, 218);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin: 5px;
+
+    .produto1, .produto2, .produto3, .produto4, .produto5{ 
+        width:20%;
+        background-color: red;
+        border: 5px, solid, rgb(197, 0, 0);
+        color: white;
+        margin: 5px;
+        box-shadow: 5px 5px 20px black;
+      transition: transform 0.3s ease, box-shadow 0.1s ease; 
+    }
+    
+    
+    .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover, .produto5:hover {
+        transform: scale(1.03);
+        box-shadow: 1px 5px 25px red;
+    }
+      
+      .camisa {
+        max-width: 400px;
+        max-height: 350px;
+        margin-top: 20px;
+      }
+
+      .produto2 {
+        width: 20%;
+        margin: 5px;
+     }
+    
+     .produto3 {
+        margin: 5px;
+     }
+  }
+
+  .produtos2 {
+    grid-area: produto2;
+    background-color: rgb(255, 243, 218);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+
+    .produto1, .produto2, .produto3, .produto4, .produto5{ 
+        width:20%;
+        background-color: red;
+        border: 5px, solid, rgb(197, 0, 0);
+        color: white;
+        margin: 5px;
+        box-shadow: 5px 5px 20px black;
+        transition: transform 0.3s ease, box-shadow 0.1s ease; 
+    }
+    
+    
+    .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover, .produto5:hover {
+        transform: scale(1.03);
+        box-shadow: 1px 5px 25px red;
+    }
+      
+      .camisa {
+        max-width: 400px;
+        max-height: 350px;
+        margin-top: 20px;
+      }
+
+      .produto2 {
+        width: 20%;
+        margin: 5px;
+     }
+    
+     .produto3 {
+        margin: 5px;
+     }
+  }
+
+  
+  
+  
+  footer {
+     grid-area: rodape;
+     background-color: red;
+     color: white;
+    display: grid;
+    padding: 10px;
+    font-size: 20px;
+
+    .social {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin: 10px 0;
+    }
+    
+    .social div {
+        margin: 0 10px; 
+    }
+    
+    #imagemSocial{
+        width: 40px; 
+        height: auto; 
+        transition: transform 0.5s ease; 
+    }
+
+    #imagemSocial:hover{
+        transform: scale(1.2);
+    }
+  }
+
+ 
+
+  @media(max-width: 992px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 150px 1000px 1000px 235px;
+        grid-template-areas: "cabecalho" 
+                              "secao" 
+                              "produto1" 
+                              "produto2" 
+                              "rodape";
+    }
+      
+    
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        border: 10px, solid, red;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 95px;
+        right: 0;
+        left: 0px;
+        width: 95%;
+        padding: 1rem;
+        z-index: 10;
+    
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+    .produtos1, .produtos2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        .produto5, .produto3, .produto4 {
+            margin: 0;
+            border: solid 1px #fff;
+            width: 33%;
+        }
+
+        .produto1, .produto2 {
+            width: 47%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .camisa {
+            max-width: 90%;
+            max-height: 90%;
+            margin-top: 40px;
+          }
+
+    }
+
+   
+    
+ }
+
+ @media(max-width: 920px) {
+    h1{
+        font-size: 80px;
+        
+        }
+ }
+
+ @media(max-width: 768px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 150px 3000px 3000px 235px;
+        grid-template-areas: "cabecalho" 
+                              "secao" 
+                              "produto1" 
+                              "produto2" 
+                              "rodape";
+    }
+
+   
+      
+
+    .produtos1, .produtos2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 0px;
+        
+        
+        .produto1, .produto2, .produto3, .produto4, .produto5 {
+            border: solid 1px #fff;
+            width: 70%;
+            margin: 10px 0;
+        }
+
+        .camisa {
+            max-width: 80%;
+          }
+    }
+
+    header{
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 100px; 
+    }
+      
+    h1{
+        font-size: 70px;
+        
+        }
+
+    
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 243, 218);
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        right: 0;
+        width: 93%;
+        padding: 1rem;
+        z-index: 15;
+        border: 11px, solid, red;
+    }
+
+    .navbar.open{
+        display: flex;
+    }
+
+
+ }
+
+ @media(max-width: 640px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 100px 2500px 2500px 235px;
+        grid-template-areas: "cabecalho" 
+                              "secao" 
+                              "produto1" 
+                              "produto2" 
+                              "rodape";
+    }
+    h1{
+        font-size: 40px;
+        
+        }
+ }
+
+ @media(max-width: 453px) {
+    .principal {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 75px 2000px 2000px 235px;
+        grid-template-areas: "cabecalho" 
+                              "secao" 
+                              "produto1" 
+                              "produto2" 
+                              "rodape";
+    }
+
+    h1{
+        font-size: 30px;
+        
+        }
+    }
+
+    
+ @media(max-width: 400px) {
+    h1{
+        font-size: 25px;
+        
+        }
+    }
+
+    @media(max-width: 370px) {
+        h1{
+            font-size: 20px;
+            
+            }
+        }
