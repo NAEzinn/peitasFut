@@ -148,7 +148,6 @@ h1{
     color:#fff;
     font-size: 90px;
     -webkit-text-stroke: 2px rgb(0, 0, 0);
-    letter-spacing: -0.5px;
     line-height: 0;
     }
 
@@ -173,13 +172,22 @@ a {
         text-align: center;
     }
     
-    .nos{
-        max-width: 400px;
-        display: block; 
-    margin: 0 auto;
-     }
+    
 
  }
+
+ .bemvindo-content {
+    display: flex;
+    flex-direction: column; 
+    
+    align-items: center; 
+    
+}
+
+.nos {
+    max-width: auto; 
+    height: 40%;
+}
   
 
  
@@ -273,6 +281,14 @@ a {
     
  }
 
+ 
+ @media(max-width: 840px) {
+    h1{
+        font-size: 62px;
+        
+        }
+ }
+
  @media(max-width: 768px) {
 
     .principal {
@@ -291,8 +307,9 @@ a {
       
     h1{
         
-        font-size: 60px;
+        font-size: 55px;
         
+
         }
         
         .nos{
@@ -338,37 +355,44 @@ a {
 
  }
 
- @media(max-width: 732px) {
-    h1{
-        font-size: 50px;
-        
-        }
- }
 
- @media(max-width: 640px) {
+ @media(max-width: 694px) {
     h1{
         font-size: 40px;
         
         }
 
-        section{
-
-        .nos{
-            max-width: 200px;
-            
-         }
+        .nos {
+            max-width: auto; 
+            height: 30%;
         }
+          
     }
 
     
- @media(max-width: 538px) {
+ @media(max-width: 547px) {
     h1{
         font-size: 30px;
         
         }
+
+        .nos {
+            max-width: auto; 
+            height: 25%;
+        }
+          
     }
 
-    @media(max-width: 445px) {
+    @media(max-width: 520px) {
+        .principal {
+            grid-template-columns: 100%;
+            display: grid;
+            grid-template-rows: 100px 1000px 150px;
+            grid-template-areas: "cabecalho" "secao" "rodape";
+        }
+    }
+
+    @media(max-width: 449px) {
         .principal {
             grid-template-columns: 100%;
             display: grid;
@@ -381,15 +405,19 @@ a {
             }
         }
 
-        @media(max-width: 392px) {
+        @media(max-width: 403px) {
             .principal {
                 grid-template-columns: 100%;
                 display: grid;
-                grid-template-rows: 100px 1500px 150px;
+                grid-template-rows: 100px 1300px 150px;
                 grid-template-areas: "cabecalho" "secao" "rodape";
             }
             h1{
                 font-size: 20px;
                 
+                }
+                .nos {
+                    max-width: auto; 
+                    height: 20%;
                 }
             }

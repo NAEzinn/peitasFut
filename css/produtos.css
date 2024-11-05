@@ -172,6 +172,7 @@ a {
   }
  
   .produtos1 {
+
     grid-area: produto1;
     background-color: rgb(255, 243, 218);
     display: flex;
@@ -185,7 +186,15 @@ a {
         border: 5px, solid, rgb(197, 0, 0);
         color: white;
         margin: 5px;
-      }
+        box-shadow: 5px 5px 20px black;
+      transition: transform 0.3s ease, box-shadow 0.1s ease; 
+    }
+    
+    
+    .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover, .produto5:hover {
+        transform: scale(1.03);
+        box-shadow: 1px 5px 25px red;
+    }
       
       .camisa {
         max-width: 400px;
@@ -216,7 +225,15 @@ a {
         border: 5px, solid, rgb(197, 0, 0);
         color: white;
         margin: 5px;
-      }
+        box-shadow: 5px 5px 20px black;
+        transition: transform 0.3s ease, box-shadow 0.1s ease; 
+    }
+    
+    
+    .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover, .produto5:hover {
+        transform: scale(1.03);
+        box-shadow: 1px 5px 25px red;
+    }
       
       .camisa {
         max-width: 400px;
